@@ -11,11 +11,11 @@ int main ()
 
     if (y<x)
     {
-        printf("%d is smallest number .",y);
+        printf("%d is smaller number.",y);
     }
     else 
     {
-        printf("%d is smallest number .",x);
+        printf("%d is smaller number.",x);
     }
     return 0;
 }
