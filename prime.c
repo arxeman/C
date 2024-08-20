@@ -1,3 +1,4 @@
+//a program to check prime numbers
 #include<stdio.h>
 int main()
 {
