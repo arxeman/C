@@ -6,10 +6,10 @@ int main()
     printf("Choice to convert Temperature from one form to another:\n");
     printf("1 Celcius to Fahrenheit\n2 Fahrenheit to Celcius\n3 Celcius to Kelvin\n4 Kelvin to Celcius\n5 Kelvin to Fahrenheit\n6 Fahrenheit to Kelvin\n");
     printf("Enter choice: ");
-    scanf("%c",&ch);  //input from user
-    switch(ch)
+    scanf("%c",&ch);  //choice input from user
+    switch(ch)  //for calculation according to user's choice
     {
-        case '1':
+        case '1':  //celcius to fahrenheit
         {
             double cel,fah;
             printf("Enter temperature in Celcius: ");
@@ -18,7 +18,7 @@ int main()
             printf("Temperature in Fahrenheit = %lf",fah);
         }
         break;
-        case '2':
+        case '2':  //fahrenheit to celcius
         {
             double cel,fah;
             printf("Enter temperature in Fahrenheit: ");
@@ -27,7 +27,7 @@ int main()
             printf("Temperature in Celcius = %lf",cel);
         }
         break;
-        case '3':
+        case '3':  //celcius to kelvin
         {
             double cel,kel;
             printf("Enter temperature in Celcius: ");
@@ -36,7 +36,7 @@ int main()
             printf("Temperature in Kelvin = %lf",kel);
         }
         break;
-        case '4':
+        case '4':  //kelvin to celcius
         {
             double cel,kel;
             printf("Enter temperature in Kelvin: ");
@@ -44,8 +44,8 @@ int main()
             cel=kel-273.15;
             printf("Temperature in Celcius = %lf",cel);
         }
-        break;
-        case '5':
+        break;  
+        case '5':  //kelvin to fahrenheit
         {
             double kel,cel,fah;
             printf("Enter temperature in Kelvin: ");
@@ -55,7 +55,7 @@ int main()
             printf("Temperature in Fahrenheit = %lf",fah);
         }
         break;
-        case '6':
+        case '6':  //fahrenheit to kelvin
         {
             double kel,cel,fah;
             printf("Enter temperature in Fahrenheit: ");
@@ -64,6 +64,8 @@ int main()
             kel=cel+273.15;
             printf("Temperature in Kelvin = %lf",kel);
         }
+        default:  //default output
+            printf("Wrong Choice!"); 
     }
     return 0;
 }
