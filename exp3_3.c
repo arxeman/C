@@ -1,5 +1,4 @@
 //program to check a number according to user's choice
-//experiment 3.3
 #include<stdio.h>
 #include<math.h>
 int main()
