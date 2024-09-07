@@ -1,4 +1,4 @@
-//program to swap two numbers given by users
+//program to swap two numbers given by users using third variable
 #include<stdio.h>
 int main()
 {
