@@ -1,4 +1,4 @@
-//program to print 1 to 10 using while and for loop
+//program to print 1 to 10 using while, do-while and for loop
 #include<stdio.h>
 int main()
 {
