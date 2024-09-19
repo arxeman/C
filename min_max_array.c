@@ -14,12 +14,12 @@ int main()
     min=max=arr[0];
     for(int i=1;i<n;i++)  //linear search
     {
-        if(arr[i]<min)
+        if(arr[i]<min)  //to find min element
         {
             min=arr[i];
             index1=i+1;
         }
-        else if(arr[i]>max)
+        else if(arr[i]>max)  //to find max element
         {
             max=arr[i];
             index2=i+1;
