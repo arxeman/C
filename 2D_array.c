@@ -1,4 +1,4 @@
-//program to accept n*n terms in an array and find the sum of elements row  wise and cloumn wise in 2D array
+//program to accept n*n terms in an array and find the sum of elements row  wise and coloumn wise in 2D array
 #include<stdio.h>
 int main()
 {
