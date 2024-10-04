@@ -1,6 +1,6 @@
 //program to print first 15 natural numbers using recursion
 #include<stdio.h>
-int firstprint(int x);
+void firstprint(int x);
 int main()
 {
     int x=15;
@@ -8,10 +8,10 @@ int main()
     firstprint(x);
     return 0;
 }
-int firstprint(int a)
+void firstprint(int a)
 {
     printf("%d ",a);
     if(a==1)
-        return 0;
+        return;
     return firstprint(a-1);
 }
