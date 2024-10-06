@@ -1,4 +1,4 @@
-//this program uses gotooperation to print menu
+//this program uses goto and break operations to print menu
 #include <stdio.h>
 #include<math.h>
 int main()
