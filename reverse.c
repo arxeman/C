@@ -1,16 +1,22 @@
 //program to find reverse of a number
 #include<stdio.h>
+void rev(int n);
 int main()
 {
-    int n,reversed=0;
+    int n;
     printf("Enter a number: ");
-    scanf("%d",&n);  //input of number
-    while(n!=0)  //finding reverse
+    scanf("%d",&n);
+    rev(n);
+    return 0;
+}
+void rev(int n)
+{
+    int reverse=0;
+    while(n!=0)
     {
-        int digit=n%10;  //last digit
-        reversed=reversed*10+digit;
+        int remainder=n%10;
+        reverse=reverse*10+remainder;
         n/=10;
     }
-    printf("Reversed number = %d",reversed);  //output
-    return 0;
+    printf("Reversed number is: %d",reverse);
 }
