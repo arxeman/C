@@ -3,8 +3,8 @@
 #include<string.h>
 int main()
 {
-    char str1[10],str2[10]="xyz";
-    strcpy(str1,"pqr");
+    char str1[10],str2[10]="DEF";
+    strcpy(str1,"ABC");
     printf("String 1 is: %s",str1);
     printf("\nString 2 is: %s",str2);
     strcat(str1,str2);
@@ -19,7 +19,5 @@ int main()
     {
         printf("\nString 1 is not equal to String 2");
     }
-    strcpy(str2,str1);
-    printf("\nString 2 after copying is: %s",str2);
     return 0;
 }
