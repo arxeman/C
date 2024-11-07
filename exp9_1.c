@@ -11,7 +11,7 @@ struct personal
 int main() {
     struct personal P;
     printf("Enter name: ");
-    scanf("%s",P.name);  //only first name
+    gets(P.name);//scanf("%s",P.name);  //only first name
     printf("Enter date: ");
     scanf("%d",&P.dd);
     printf("Enter month: ");
@@ -20,8 +20,8 @@ int main() {
     scanf("%d",&P.year);
     printf("Enter salary: ");
     scanf("%f",&P.sal);
-    printf("\nName: %s",P.name);
-    printf("\nDate: %d/%s/%d",P.dd,P.month,P.year);
-    printf("\nSalary: %f",P.sal);
+    printf("Name: %s\n",P.name);
+    printf("Date: %d/%s/%d\n",P.dd,P.month,P.year);
+    printf("Salary: %f",P.sal);
     return 0;
 }
